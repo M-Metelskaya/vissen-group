@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { Banner } from "./components/banner/Banner";
+import { NavBar } from "./components/navbar/Navbar";
+import { TabCategories } from "./components/technologies/TabCategories";
+import { Gradient } from "./Gradient";
+import "./App.css";
 
 function App() {
+  useEffect(() => {
+    const gradient: any = new Gradient();
+    gradient.initGradient("#gradient-canvas");
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <canvas
+        id="gradient-canvas"
+        data-js-darken-top
+        data-transition-in
+      ></canvas>
+      <NavBar />
+      <Banner />
+      <TabCategories />
     </div>
   );
 }

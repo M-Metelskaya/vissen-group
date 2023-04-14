@@ -1,0 +1,121 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+
+  button {
+    font-size: 1.7rem;
+    background: none;
+    color: #fff;
+    border: none;
+    margin-left: 2rem;
+    &:hover {
+      border-bottom: 2px solid #fff;
+    }
+  }
+  .active-tab {
+    border-bottom: 2px solid #fff;
+  }
+}
+
+.techBlock {
+  // position: relative;
+  height: 100vh;
+  margin: 0;
+  padding: 2rem 5%;
+  box-sizing: border-box;
+
+  .techCardBack {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: inset 0 0 2000px #ffffff4f;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: #fff;
+    padding: 2rem;
+    box-sizing: border-box;
+    .sideMenu {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      padding: 0 2%;
+      box-sizing: border-box;
+      border-right: 1px solid #ffffff34;
+      button {
+        font-size: 1.2rem;
+        color: #fff;
+        background: none;
+        border: none;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid #ffffff2d;
+
+        &:hover {
+          background: #ffffff46;
+          color: #fff;
+          border-radius: 30px;
+        }
+      }
+      .active-button {
+        background: #ffffff46;
+        color: #8352ec;
+        border-radius: 30px;
+      }
+    }
+    .techInfo {
+      width: 50%;
+      border-right: 1px solid #ffffff34;
+      h2 {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1.2rem;
+        font-weight: 200;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        margin-top: 1rem;
+        &:hover {
+          color: #8352ec;
+        }
+        p {
+          display: flex;
+          flex-direction: column;
+          font-size: 1rem;
+          // span {
+          //   color: #ffffffa1;
+          // }
+        }
+      }
+    }
+    .techIcons {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 2%;
+    }
+
+    .technologies {
+      display: flex;
+      justify-content: end;
+      width: 100%;
+      margin-top: 5%;
+      p {
+        padding: 0 1rem;
+        border-left: 1px solid #ffffff4f;
+        &:first-child {
+          border: none;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+.tabs button {
+  font-size: 1.7rem;
+  background: none;
+  color: #fff;
+  border: none;
+  margin-left: 2rem;
+}
+.tabs button:hover {
+  border-bottom: 2px solid #fff;
+}
+.tabs .active-tab {
+  border-bottom: 2px solid #fff;
+}
+
+.techBlock {
+  height: 100vh;
+  margin: 0;
+  padding: 2rem 5%;
+  box-sizing: border-box;
+}
+.techBlock .techCardBack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.3098039216);
+  border-radius: 30px;
+  font-size: 1rem;
+  color: #fff;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.techBlock .techCardBack .sideMenu {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 0 2%;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(255, 255, 255, 0.2039215686);
+}
+.techBlock .techCardBack .sideMenu button {
+  font-size: 1.2rem;
+  color: #fff;
+  background: none;
+  border: none;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1764705882);
+}
+.techBlock .techCardBack .sideMenu button:hover {
+  background: rgba(255, 255, 255, 0.2745098039);
+  color: #fff;
+  border-radius: 30px;
+}
+.techBlock .techCardBack .sideMenu .active-button {
+  background: rgba(255, 255, 255, 0.2745098039);
+  color: #8352ec;
+  border-radius: 30px;
+}
+.techBlock .techCardBack .techInfo {
+  width: 50%;
+  border-right: 1px solid rgba(255, 255, 255, 0.2039215686);
+}
+.techBlock .techCardBack .techInfo h2 {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.techBlock .techCardBack .techInfo p {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.techBlock .techCardBack .techInfo a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-top: 1rem;
+}
+.techBlock .techCardBack .techInfo a:hover {
+  color: #8352ec;
+}
+.techBlock .techCardBack .techInfo a p {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+.techBlock .techCardBack .techIcons {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2%;
+}
+.techBlock .techCardBack .technologies {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  margin-top: 5%;
+}
+.techBlock .techCardBack .technologies p {
+  padding: 0 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.3098039216);
+}
+.techBlock .techCardBack .technologies p:first-child {
+  border: none;
+}
+.techBlock .techCardBack .technologies p:last-child {
+  padding-right: 0;
+}/*# sourceMappingURL=technologiesBlock.css.map */
